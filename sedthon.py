@@ -793,14 +793,7 @@ async def OwnerStart(event):
     if sender.id == ownerhson_id :
         order = await event.reply('أهلاً بك مطوري - @S_i_D')
 
-ownerhson_id = 5413631898
-@sedthon.on(events.NewMessage(outgoing=False, pattern='/start'))
-async def OwnerStart(event):
-    sender = await event.get_sender()
-    if sender.id == ownerhson_id :
-        order = await event.reply('اهلا بك مبرمجي - @zQQQzQ')
-        
-        
+
 @sedthon.on(events.NewMessage(outgoing=True, pattern=r"\.ورود"))
 async def _(event):
     event = await event.edit("حسناً")
